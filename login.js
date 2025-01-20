@@ -6,7 +6,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   
     if (inputDate === correctDate) {
         
-        window.location.href = "/public/index.html";
+        window.location.href = "/home.html";
     } else {
         
         alert("Kamu lupaa yaaa!");
