@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Girlfriend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl">
+        <div class="form-wrapper bg-white p-8 rounded-lg shadow-lg w-full md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4">Masuk</h2>
+            <form id="login-form">
+                <div class="form-control mb-4">
+                    <h2 class="text-lg font-semibold mb-2">Tanggal Jadian</h2>
+                    <input type="date" id="jadian-date" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <button type="submit" class="w-full bg-beige-500 text-white font-semibold p-2 rounded hover:bg-blue-600">Masuk</button>
+                <div class="form-help flex justify-between items-center mt-4">
+                    <div class="remember-me flex items-center">
+                        <input type="checkbox" id="remember-me" class="mr-2">
+                        <label for="remember-me">Ingat saya</label>
+                    </div>
+                    <a href="#" class="text-blue-500 hover:underline">Lupa Password</a>
+                </div>
+            </form>
+            <p class="mt-4">Lupa Tanggal Jadian? <a href="#" class="text-blue-500 hover:underline">Parah Banget Sihhh</a></p>
+        </div>
+        <div class="slider w-full md:w-1/2 bg-white shadow-lg rounded-lg overflow-hidden mt-8 md:mt-0 md:ml-8">
+            <div class="slider-inner">
+                <div class="slide">
+                    <img alt="Placeholder image of a scenic landscape with mountains and a lake" class="w-full h-auto" height="600" src="/img/1735871421645.jpg" width="800"/>
+                </div>
+                <div class="slide">
+                    <img alt="Placeholder image of a city skyline at sunset with tall buildings" class="w-full h-auto" height="600" src="/img/CamScanner 16-04-2024 05.40_pages-to-jpg-0008.jpg" width="800"/>
+                </div>
+                <div class="slide">
+                    <img alt="Placeholder image of a forest with tall trees and sunlight filtering through" class="w-full h-auto" height="600" src="/img/CamScanner 16-04-2024 05.40_pages-to-jpg-0020.jpg" width="800"/>
+                </div>
+                <div class="slide">
+                    <img alt="Placeholder image of a beach with white sand and clear blue water" class="w-full h-auto" height="600" src="/img/CamScanner 16-04-2024 05.40_pages-to-jpg-0023.jpg" width="800"/>
+                </div>
+                <div class="slide">
+                    <img alt="Placeholder image of a snowy mountain peak under a clear blue sky" class="w-full h-auto" height="600" src="/img/CamScanner 16-04-2024 05.40_pages-to-jpg-0030.jpg" width="800"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/public/login.js"></script>
+</body>
+</html>

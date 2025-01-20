@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Galerry</title>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <a href="/public/index.html" class="back-button">Back to Home</a>
+</nav>
+
+    <main>
+        <div class="carousel">
+          <ul class='slider'>
+            <li class='item' style="background-image: url('/img/Image\ \(1\).jpg')">
+              <div class='content'>
+                <h2 class='title'>"Bab 1"</h2>
+                <p class='description'> Kamu membuktikan kepadaku bahwa kecantikan sejati tidak hanya ada pada penampilan, tetapi juga dalam kebaikan hati dan senyuman yang tulus, yang aku harap akan selalu menjadi milikku selamanya.  </p>
+                <button>Read More</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('/img/Image\ \(2\).jpg')">
+              <div class='content'>
+                <h2 class='title'>"Bab 2"</h2>
+                <p class='description'> Kamu adalah segalanya bagiku, dengan kecantikan yang lebih dari apapun, kebaikan hati yang menghangatkan, dan senyuman indah yang selalu meyakinkanku bahwa cinta kita akan bertahan selamanya.  </p>
+                <button>Read More</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('/img/Image\ \(20\).jpg')">
+              <div class='content'>
+                <h2 class='title'>"Bab 3"</h2>
+                <p class='description'> Hatimu yang baik, senyumanmu yang penuh pesona, dan cinta yang kamu berikan adalah bukti nyata bahwa hubungan ini memiliki kekuatan untuk bertahan selamanya.  </p>
+                <button>Read More</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('img/Image\ \(12\).jpg')">
+              <div class='content'>
+                <h2 class='title'>"Bab 4"</h2>
+                <p class='description'>
+                  Aku jatuh cinta tidak hanya pada kecantikanmu yang luar biasa, tetapi juga pada kebaikanmu yang tanpa akhir dan senyumanmu yang seolah berkata bahwa kita akan tetap bersama selamanya.
+                </p>
+                <button>Read More</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('/img/Image\ \(9\).jpg')">
+              <div class='content'>
+                <h2 class='title'>"Bab 5"</h2>
+                <p class='description'>
+                  Senyumanmu yang begitu cantik selalu menjadi cahaya dalam hidupku, sedangkan kebaikanmu adalah kehangatan yang membuatku ingin menjaga cinta kita selamanya.
+                </p>
+                <button>Read More</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('/img/CamScanner\ 16-04-2024\ 05.40_pages-to-jpg-0023.jpg')">
+              <div class='content'>
+                <h2 class='title'>"Bab 6"</h2>
+                <p class='description'> Aku ingin menjalani hidup ini denganmu untuk selamanya, tertawa bersama, bahagia bersama dan bersamamu selamanya. I love you sayang .  </p>
+                <button>Read More</button>
+              </div>
+            </li>
+          </ul>
+          <nav class='nav'>
+            <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+            <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+          </nav>
+        </div>
+      </main>
+
+      <audio id="background-music" src="I Wanna Be Yours.mp4" loop></audio>
+      <script>
+          window.onload = function() {
+              var audio = document.getElementById('background-music');
+              audio.play();
+          }
+      </script>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <script>
+        const slider = document.querySelector('.slider');
+            function activate(e) {
+            const items = document.querySelectorAll('.item');
+            e.target.matches('.next') && slider.append(items[0])
+            e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+            }
+
+            document.addEventListener('click',activate,false);
+      </script>
+
+</body>
+</html>

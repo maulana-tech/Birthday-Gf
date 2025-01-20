@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/styles.css">
+  <link rel="stylesheet" href="/style/responsive.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-roboto">
+  <div id="heart"></div>
+  
+  <nav class="navbar">
+    <div class="navbar-title">I Love my GF</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <img src="/img/menu.png" alt="Menu Icon"> 
+    </div>
+    <div class="navbar-menu">
+      <a href="https://my-netflix-clone-fawn.vercel.app/">Our Profile</a>
+      <a href="/public/login.html">Log Out</a>
+      <div class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-menu">
+          <a href="https://flappy1.vercel.app/">Game</a>
+          <a href="https://love-1-pi.vercel.app/">Love for you</a>
+          <a href="https://birthday-card-self.vercel.app/">Birthday card</a>
+          <a href="https://example.com/link4">Something else</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+  <button class="read-button">Read me 💌</button>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">Read me 💌</div>
+        <div class="modal-content">
+            <p>I just wanted to take a moment to put into words how much you mean to me. Life can be busy, and sometimes I feel like words don’t come close to expressing how I feel about you—but today, I want to try.</p>
+            <p>You are the light in my life, the person who makes everything better just by being there. Your patience, kindness, and intelligence inspire me every single day. You bring out the best in me, and I am so grateful for the way you love me unconditionally, even with all my flaws.</p>
+            <p>I admire your strength and your beauty—inside and out. You have a way of making the world seem brighter, even on my darkest days. Your laugh is my favorite sound, your smile my favorite sight, and your heart is my favorite place to be.</p>
+            <p>You are more than my partner; you are my confidant, my teammate, and my biggest blessing. I cannot imagine my life without you, and I’m so lucky to call you mine.</p>
+            <p>Please always remember that no matter what life throws at us, I will be here—by your side, loving and supporting you through it all. You are my everything, and I will never stop cherish2ng you.</p>
+            <p>I love you more than words can ever say.</p>
+            <p>I Love you from Lana to my Beautiful Girlfriend</p>
+        </div>
+      <div class="modal-footer">
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+
+  <div class="content">
+    <!-- Sidebar -->
+
+
+    <div class="main-content" id="main-content">
+      <div class="card-content">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-description">If you want to see more your beautiful , you can click on the link below</p>
+          <a class="button" href="/profile.html">Read more</a>
+        </div>  
+    </div>
+
+    <div id="image-modal" class="mdl">
+      <span class="close-btn">&times;</span>
+      <img class="modal-image" id="img01">
+      <div id="caption"></div>
+    </div>
+    
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+      <div class="card-song">
+        <h2 class="notice">🎵 Songs that sound like her 🎵</h2>
+        <div class="song-list">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n?utm_source=generator" 
+                width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1ctbkptXLNIoEVTNAFYV4d?utm_source=generator" 
+                width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3znQ9i61vfe2E7URHlOiyc?utm_source=generator" 
+                width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3vkCueOmm7xQDoJ17W1Pm3?utm_source=generator" 
+                width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+      </div>
+      <div class="card-song">
+        <h2 class="notice">🌸 My favorite things about her 🌸</h2>
+        <p class="card-description">✨ I Love Everything about you Sayaang, I love you so much tomorrow, now, and for eternity of my life</>
+        <p class="card-description">✨ I love you when you smile, laugh, clingy, and your voice, Everything about you I love so MUCHHH &lt;3</>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const readButton = document.querySelector('.read-button');
+    const closeButton = document.querySelector('.close-button');
+    const overlay = document.getElementById('overlay');
+    const modal = document.getElementById('modal');
+
+    readButton.addEventListener('click', function() {
+        overlay.style.display = 'block';
+        modal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        modal.style.display = 'none';
+    });
+
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        modal.style.display = 'none';
+    });
+});
+  </script>
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
